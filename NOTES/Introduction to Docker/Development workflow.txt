@@ -1,0 +1,27 @@
+
+STEP 1: dockerizing
+// Dockerizing an applications means taking the app and make changes so it can be run by docker
+    // We just add a docker file to the app
+
+STEP 2: appliction --> image
+// A docker file is plain text file that contains instructions that docker uses to package our app into an image
+// The Image contains everything our application needs to run
+
+// The image file might contain:
+    A cut down OS
+    A runtime environment
+    Application files
+    Third-party libraries
+    ENVs
+
+STEP 3: Image --> Container
+// After the image has been created, we tell docker to start a container using that image
+     A container is special kind of process because it has its own files system which is provided by the image
+
+STEP 4: 
+// Our application gets load inside a container, and this is how we run our app locally on a development machine
+
+STEP 5:
+// Instead of directly launching our app, we tell docker to run it for us
+
+// We can push the image to dockerhub, which is like an remote repo and we can pull the image from any machine

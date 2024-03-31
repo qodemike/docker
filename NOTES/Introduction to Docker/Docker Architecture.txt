@@ -1,0 +1,17 @@
+
+// Docker uses a client -> server architecture
+    It's got a client component that talks to a server using REST API.
+
+// The server is also called the Docker Engine takes care of building and running docker containers.
+
+// A container is just a process
+
+// Kernel is the core of the operating system
+    it manages applications and hardware resources like memory and cpu
+
+// The Kernel is reason why an application runs only on it's designated OS
+    This is because the Kernels in OSs have different APIs to applications
+
+// On Linux OS we can only run linux containers
+// ON Windows OS we can run both windows and linux containers
+    because windows officialy has a custom built linux Kernel

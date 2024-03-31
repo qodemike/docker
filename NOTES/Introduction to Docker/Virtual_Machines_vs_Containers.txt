@@ -1,0 +1,20 @@
+
+// CONTAINERS -- are Isolated enviroments for running our applications
+// VIRTUAL MACHINES -- An abstraction of a machine(physical hardware)
+
+// Hypervisor helps in running of virtual machines on an OS
+    its software used to create and manage virtual machines
+
+HYPERVISORS
+    VMware
+    VirtualBox
+    Hyper-V
+
+Virtual Machines are resource intensive cause each runs a full blown OS
+    and are slow to start.
+
+CONTAINERS
+    They give us the same kind of isoloation as VMs
+    But they are more lightweight
+    Use OS of the host
+    Need less hardware resources
