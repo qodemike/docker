@@ -1,0 +1,27 @@
+
+// Create Dockefile in the project directory, the file doesn't have any extensions.
+
+// Inside the file we write instructions for packaging our application.
+
+// Configurations in the Dokerfile
+    FROM node:apline -- specifying the runtime
+    COPY . /app      -- copy everything from this directory to app directory in the docker image
+    WORKDIR /app     -- specifying the workdir so we don't have specify dir of the project in CMD
+    CMD node /app/app.js -- the command used to run the application from the image
+
+// Then we go to the terminal and tell docker to package our application
+    docker build
+    docker build -t  // Adding -t  is a tag
+    docker build hello-world // the name of the image
+    docker build .  // then specify the directory of the docker file 
+    docker build -t hello-world .
+
+// To see all the images in this PC
+    docker image ls OR docker images // this will list all images
+
+    REPOSITORY                 TAG       IMAGE ID       CREATED         SIZE
+    hello-docker               latest    6dc4e832c07c   4 minutes ago   141MB   // this image contains node, alpine linux and our application files
+    docker/welcome-to-docker   latest    c1f619b6477e   4 months ago    18.6MB
+
+// To run the image
+    docker run hello-docker
