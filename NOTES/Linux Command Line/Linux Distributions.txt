@@ -1,0 +1,9 @@
+
+
+Ubuntu
+Debian
+Alpine
+Fedora
+Centos
+
+// You may discover some differeneces along the way

@@ -1,0 +1,28 @@
+
+docker pull ubuntu -- to pull an image from the cloud
+docker run ubuntu -- if image is not present, docker will download it and run it
+
+docker ps --see the list of running containers
+docker ps -a --see the list or running and stopped containers
+
+docker run -it ubuntu -- run ubuntu image in interactive containter
+
+// Shell is a program that takes commands and passes them to the OS for execution
+
+root@2cdada18eade:/# -- 
+    root         -- is  the user. 
+    2cdada18eade -- the name of the machine.
+    /            -- where we are in the file system it is the highest directory in the file system
+    #            -- logged in as admin, of not admin, you'd see $
+
+root@2cdada18eade:/# echo hello  -- prints out hello
+root@2cdada18eade:/# whoami      -- see who the users is
+root@2cdada18eade:/# echo hello  -- prints out hello
+
+// linux OS is case sensitive
+
+root@2cdada18eade:/# history -- can see all the commands we have typed in  lately
+
+root@2cdada18eade:/# !2 -- execute command number 2 in the history
+
+
