@@ -1,0 +1,13 @@
+
+root@2cdada18eade:/# ls     -- lists all the files in the root directory
+root@2cdada18eade:/# ls -1  -- lists all the files in the root directory, but in a column
+
+// Navigation
+root@2cdada18eade:/# cd  -- we can type in relative or absolute path
+root@2cdada18eade:/# cd boot -- relative from where we are
+root@2cdada18eade:/# cd / -- starting from root
+
+// Peeking over a directory
+root@2cdada18eade:/# ls /bin -- will list programs in the bin/ directory
+
+root@2cdada18eade:/# cd ~ -- takes you to the home directory

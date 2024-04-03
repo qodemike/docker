@@ -1,0 +1,12 @@
+
+// In Linux
+   / 
+    bin
+    boot -- location of bootin files
+    dev  -- stands for devices
+    etc  -- editable text config
+    home -- where users are stored
+    root -- only the root users can access this directory
+    lib  -- software library dependencies
+    var
+    proc -- running process
