@@ -1,0 +1,23 @@
+
+root@2cdada18eade:/# mkdir  -- to make a directory
+
+// Moving files and folders
+root@2cdada18eade:/# mv -- to rename folders or move them somewhere else
+root@2cdada18eade:/# mv test docker -- rename test folder to docker
+
+// Creating files
+root@2cdada18eade:/# touch
+root@2cdada18eade:/# touch hello.text -- creates a new file called hello.txt
+root@2cdada18eade:/# touch hello.text  file1.text file2.txt file3.txt -- creates a new files in one go
+
+// CTRL+W to delete a whole word
+
+// Removing files
+root@2cdada18eade:/# rm
+root@2cdada18eade:/# rm file1.txt file2.txt file3.txt  -- remove files in one go
+root@2cdada18eade:/# rm file* -- remove all files
+
+// Removing folders
+root@2cdada18eade:/# rm docker/ -- this will fail since docker is a directory
+root@2cdada18eade:/# rm -r docker/ -- remove this directory and all it's content recursively
+

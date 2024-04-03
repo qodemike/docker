@@ -10,4 +10,4 @@ root@2cdada18eade:/# cd / -- starting from root
 // Peeking over a directory
 root@2cdada18eade:/# ls /bin -- will list programs in the bin/ directory
 
-root@2cdada18eade:/# cd ~ -- takes you to the home directory
+root@2cdada18eade:/# cd ~ -- takes you to the root directory same as cd root
