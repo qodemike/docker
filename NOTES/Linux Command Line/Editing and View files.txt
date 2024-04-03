@@ -1,0 +1,9 @@
+
+// We use text editor nano to edit a file
+root@2cdada18eade:/# nano docker/hello.txt  -- open hello.txt file in docker with nano
+
+root@2cdada18eade:/# cat docker/hello.txt   -- seeing the content of a file
+root@2cdada18eade:/# more /etc/adduser.conf -- more package is suitable if opening a text file that has alot of content
+root@2cdada18eade:/# less /etc/adduser.conf -- less allows us to scroll both up and down
+root@2cdada18eade:/# head -n 5 /etc/adduser.conf -- using head to see the first 5 lines
+root@2cdada18eade:/# tail -n 5 /etc/adduser.conf -- using tail to see the last 5 lines
