@@ -1,0 +1,14 @@
+
+// Just like npm, yarn, pip, linux has a package manager called apt advanced package tool
+// apt-get is another package mananger on linux.
+
+// Here in linux we have a package database.
+apt list -- lists all the installed packages
+
+// To install a package, running apt install nano , will look for the package in the local database.
+// Inorder to update the database run apt update, will update packages in the database the run apt install nano
+
+// 
+apt update -- update the database
+apt install nano -- install nano
+apt remove nano -- to remove nano
