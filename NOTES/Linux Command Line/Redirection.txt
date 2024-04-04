@@ -1,0 +1,10 @@
+
+// Standard input and output is a core concept in linux
+// we can always change the source of input or output, this is called redirection
+
+root@2cdada18eade:~# cat file2.txt > file1.txt  -- taking the contents of file2 and redirect them to file1.txt
+root@2cdada18eade:~# cat file2.txt >> file1.txt -- same as above but this won't overwrite, will add
+root@2cdada18eade:~# echo 'print("hello world")' > hello.py -- using echo to write content to a python file
+
+
+

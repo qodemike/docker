@@ -1,0 +1,9 @@
+
+# find -- this command will go through every files and folder in current directory and list them
+# find /etc  -- lists all the files in the etc directory
+
+// Filtering the result
+# find -type d -- to list just the directories
+# find -type f -- list just the files
+# find -type f -name "f*" -- list all the files that begin with letter f
+# find -type f -iname "f*" -- list all the files that begin with letter f case insensitive

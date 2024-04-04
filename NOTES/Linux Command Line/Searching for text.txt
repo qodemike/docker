@@ -1,0 +1,25 @@
+
+// Let's see to search for a string in a file
+
+# grep -- command stands for global regular expression print
+
+// grep is case sensitive, if you wanna remove sensitivity use -i
+
+# grep -i hello file1.txt
+# grep -i root /etc/passwd -- searching in different directory
+# grep -i hello file1.txt file2.txt  -- searching in multiple files
+    output:
+        file1.txt:hello
+        file2.txt:hello
+
+// Searching a directory
+# grep -i -r hello . -- we have to use the recursive flag  to search directories
+    output:
+        ./hello.py:print("hello world")
+        ./docker/hello.txt:print("hello world")
+        ./file2.txt:hello
+        ./file1.txt:hello
+        ./.python_history:print hello
+        ./.python_history:print("hello world")
+
+# grep -ir -- we can concatenate multiple flags together

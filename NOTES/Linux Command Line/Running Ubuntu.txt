@@ -5,7 +5,7 @@ docker run ubuntu -- if image is not present, docker will download it and run it
 docker ps --see the list of running containers
 docker ps -a --see the list or running and stopped containers
 
-docker run -it ubuntu -- run ubuntu image in interactive containter
+docker run -it ubuntu -- run ubuntu image in an interactive containter
 
 // Shell is a program that takes commands and passes them to the OS for execution
 
