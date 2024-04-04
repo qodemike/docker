@@ -1,0 +1,17 @@
+
+root@2cdada18eade:/# printenv -- to print set environment variables
+
+// For the OS to find you program it goes through a list of paths, the paths are seperated by colon
+    PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin -- these are paths that linux searches for your program
+
+// To see the values of environment variables
+    root@2cdada18eade:/# printenv PATH
+    root@2cdada18eade:/# echo $PATH -- you can also use echo
+
+// Setting an environment variable
+    export DB_USER=meek -- the environment variable is set but only within that terminal session
+ // to make the variable persistent, you have to write it in a special file   
+    root@2cdada18eade:/#  echo DB_USER=meek >> .bashrc -- adding the variable to the bashrc file
+
+// Storing varibles in the Operating system is unsecure cause at the end, the information's being stored in a text file and any
+    user with access to the machine will see the file
