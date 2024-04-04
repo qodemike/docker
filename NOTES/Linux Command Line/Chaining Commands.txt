@@ -1,0 +1,17 @@
+
+# mkdir test; cd test; echo done; -- chain commands with semicolon between them
+
+//  AND operator
+# mkdir test && cd test && echo done -- if one of the commands the next in the chain will not get executed
+
+// OR operator
+    # mkdir test || echo "directory exists" -- if mkdir is executed echo won't.
+
+// Another method of chaining commands PIPING
+    # ls /bin | less -- the output of ls /bin will go to the less command
+    # ls /bin | head -n 10 -- list the first ten from the ls outuput
+
+// If the chain is realy long horizontally you can use backslash and ENTER  to move comands to a new line
+# mkdir test; \
+> cd test; \
+> echo ..; \ 
