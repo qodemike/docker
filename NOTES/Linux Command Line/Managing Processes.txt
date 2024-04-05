@@ -1,0 +1,11 @@
+
+A process is an instance of a running program
+
+    root@2cdada18eade:/# ps -- to see running programs
+        output:
+            PID  TTY    TIME      CMD    -- PID is a unique identifier for each process
+            1    pts/0  00:00:00  bash   -- Time is the amount of CPU time each process consumed
+            14   pts/0  00:00:00  ps     -- TTY the type of terminal the user has logged into, if there was another terminal it would be pts/1
+
+// To kill a proccess that is taking too much CPU time
+    root@2cdada18eade:/# kill 14 -- use kill command plus the PID of the process
