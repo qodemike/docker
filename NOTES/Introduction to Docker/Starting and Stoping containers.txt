@@ -5,3 +5,7 @@ docker start -i 2cdada18eade86-- you can also use and id to start a container
 
 // to STOP a container from running
 root@2cdada18:# exit -- use the exit command to stop and exit from a container
+
+// IF you want to execute a running container on a new container
+docker exec -it adoring_wiles bash -- use the exit command to stop and exit from a container
+docker exec -it adoring_wiles sh -- to use shell instead of bash

@@ -11,3 +11,5 @@ root@2cdada18eade:/# cd / -- starting from root
 root@2cdada18eade:/# ls /bin -- will list programs in the bin/ directory
 
 root@2cdada18eade:/# cd ~ -- takes you to the root directory same as cd root
+
+root@2cdada18eade:/# pwd ~ -- to see the directory you are currently in
