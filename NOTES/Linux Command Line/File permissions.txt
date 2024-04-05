@@ -1,0 +1,32 @@
+
+// Files with .sh extension are called shell scripts, you can write linux CMDs in them
+// We can use .sh and create a deployment script
+
+// To see permissions for a file
+root@2cdada18eade:/home# ls -l -- this command will list files and directories and their various permissions
+    output:
+        total 8
+        -rw-r--r-- 1 root root   11 Apr  5 10:33 deploy.sh -- 
+        drwxr-x--- 2 john john 4096 Apr  5 10:18 john
+
+let us dissect the  output "-rw-r--r--"  from the output: "-rw-r--r-- 1 root root   11 Apr  5 10:33 deploy.sh"
+    -    -- the first text can be a "-" if it is a file, or a "d" if its a directory , 
+    rw-  -- current user permissions, 'r' means read permissions, 'w' means write permissions, '-' means no permission, if you had execution permission this would be an "x"
+    r--  -- permissions for the group that own this file
+    r--  -- this group reps permission for every other user
+
+// TO change permissions
+    root@2cdada18eade:/home# chmod u -- permissions for the user
+    root@2cdada18eade:/home# chmod g -- permissions for the group
+    root@2cdada18eade:/home# chmod o -- permissions for the others
+
+    root@2cdada18eade:/home# chmod u+x deploy.sh -- to add the execute permission
+    root@2cdada18eade:/home# chmod u-x deploy.sh -- to remove permissions 
+    root@2cdada18eade:/home# chmod o+x deploy.sh -- others can execute this file
+
+// Chaining the commands
+    root@2cdada18eade:/home# chmod og+x deploy.sh 
+    root@2cdada18eade:/home# chmod og+r+w+x deploy.sh 
+
+// Applying permissions to multiple files
+    root@2cdada18eade:/home# chmod og+r+w+x deploy.sh  file1.txt *.sh

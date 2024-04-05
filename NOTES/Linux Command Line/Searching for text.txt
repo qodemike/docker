@@ -13,7 +13,7 @@ root@2cdada18eade:/# grep -i hello file1.txt file2.txt  -- searching in multiple
         file2.txt:hello
 
 // Searching a directory
-root@2cdada18eade:/# grep -i -r hello . -- we have to use the recursive flag  to search directories
+root@2cdada18eade:/# grep -i -r hello . -- we have to use the recursive flag to search directories
     output:
         ./hello.py:print("hello world")
         ./docker/hello.txt:print("hello world")
