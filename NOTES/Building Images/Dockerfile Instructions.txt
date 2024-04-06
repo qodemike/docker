@@ -1,0 +1,10 @@
+
+FROM -- setting for specifying the base image
+WORKDIR -- specifying the working directory
+COPY -- copying files and directories
+ADD -- adding files and directories
+RUN -- executing operating system commands
+ENV -- setting environment variables
+EXPOSE -- for telling docker our container is starting on a given port
+USER -- specifying a user that should run the application
+CMD & ENTRYPOINT -- for specifying a command that should be executed when starting a container
