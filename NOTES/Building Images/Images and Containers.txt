@@ -1,0 +1,2 @@
+
+A container provides an isolated environment for executing an application
