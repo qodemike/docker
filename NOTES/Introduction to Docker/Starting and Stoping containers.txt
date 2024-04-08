@@ -1,9 +1,9 @@
 
 // TO start a container
-docker start -i adoring_wiles -- to start a container named adoring_wiles in interactive mode
-docker start -i 2cdada18eade86-- you can also use and id to start a container 
+docker start -i adoring_wiles  -- to start a container named adoring_wiles in interactive mode
+docker start -i 2cdada18eade86 -- you can also use and id to start a container 
 
-// to STOP a container from running
+// To STOP a container from running
 root@2cdada18:# exit -- use the exit command to stop and exit from a container
 
 // IF you want to execute a running container on a new container

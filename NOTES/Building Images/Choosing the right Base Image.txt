@@ -1,0 +1,7 @@
+
+FROM node: 20.12.1-alpine3.18
+
+docker build -t react-app . -- command to build a docker image, -t for tag,  . for where to find the dockerfile
+
+docker run -it react-app -- command to create a new container from the specified image in -it interactive mode
+
