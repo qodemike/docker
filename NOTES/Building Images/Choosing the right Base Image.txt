@@ -5,3 +5,4 @@ docker build -t react-app . -- command to build a docker image, -t for tag,  . f
 
 docker run -it react-app -- command to create a new container from the specified image in -it interactive mode
 
+Using the the 'FROM' instruction alone in the dockerfile, the project files won't exist in the image
