@@ -1,0 +1,17 @@
+
+// We need groups so that users in the same group have the same kind of permission
+
+root@2cdada18eade:~# groupadd developers
+// The group is added to /etc/group directory
+    outuput: 
+        developers:x:1003: -- 1003 is the id of the group
+
+// Adding John (a user) to the group
+// Every user has one primary group and zero or more supplementary groups
+// Primary group is automatically created when we create a new user, it is the same name as the user
+
+there are two flags for adding a user to a group:
+    -g: Changes the primary group of the user
+    -G: Adding user to a supplementary group
+
+root@2cdada18eade:~# usermod -G developers john

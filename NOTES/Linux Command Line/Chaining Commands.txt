@@ -11,7 +11,7 @@
     root@2cdada18eade:/# ls /bin | less -- the output of ls /bin will go to the less command
     root@2cdada18eade:/# ls /bin | head -n 10 -- list the first ten from the ls outuput
 
-// If the chain is realy long horizontally you can use backslash and ENTER  to move comands to a new line
+// If the chain is realy long horizontally you can use backslash and ENTER to move comands to a new line
     root@2cdada18eade:/# mkdir test; \
     > cd test; \
     > echo ..; \ 
