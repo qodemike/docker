@@ -1,5 +1,5 @@
 
-// We need to copy all project files into the image
+// We need to copy all project files (also called context) into the image
 // We can embed COPY or ADD into the Dockerfile for this
 // Although ADD has additional features
 
@@ -8,8 +8,8 @@ COPY /app/ -- all the project files will be copied to this directory, if it does
 // using WORKDIR inorder to specify a relative path on COPY
 WORKDIR /app  -- setting the absolute directory so we use relative path in COPY, 
                  and also when we start the container this will be a our default directory
-COPY . . -- the first '.' is the location where we are copying from, the second '.' is the directory where we are copying into on the image
+COPY . .  -- the first '.' is the location where we are copying from, the second '.' is the directory where we are copying into on the image
 
 // With ADD we can add a file through a url
-ADD http://... -- using a url
-ADD file.zip -- will also decompress a compressed file 
+ADD http://...  -- using a url
+ADD file.zip    -- will also decompress a compressed file 

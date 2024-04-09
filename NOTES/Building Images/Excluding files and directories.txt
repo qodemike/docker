@@ -1,0 +1,6 @@
+
+// Something like the node_modules folder doesn't need to be transfered with a container, this will make the container large
+// we need to exclude node_modules from the build
+
+// To exclude we create a file called .dockerignore file, same as gitignore
+
