@@ -1,0 +1,3 @@
+
+// Add the RUN command to the dockerfile 
+RUN npm install
