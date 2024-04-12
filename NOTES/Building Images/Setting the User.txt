@@ -1,7 +1,8 @@
 
 // By default docker runs our application with the root user that has the highest privilleges
-// If we want the one running this container not to be able to edit it , we add a new user and set that user when the container is run
-// this way that user can't edit files cause he won't have privilleges untill root says so
+// If we want the one running this container not to be able to edit it ,
+    we add a new user and set that user when the container is run
+// this way, that user can't edit files cause he won't have privilleges untill root says so
 
 // creating user in the container by adding RUN to dockerfile
 RUN addgroup app && adduser -S -G app app   --create a group called app and and a user called app into that group
