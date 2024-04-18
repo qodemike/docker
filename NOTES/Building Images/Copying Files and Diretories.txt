@@ -5,11 +5,15 @@
 
 COPY /app/ -- all the project files will be copied to this directory, if it doesn't exist it will be created
 
-// using WORKDIR inorder to specify a relative path on COPY
-WORKDIR /app  -- setting the absolute directory so we use relative path in COPY, 
-                 and also when we start the container this will be a our default directory
-COPY . .  -- the first '.' is the location where we are copying from, the second '.' is the directory where we are copying into on the image
+// using WORKDIR the following commands , will be executed in this directory
+WORKDIR /app  -- and also when we start the container this will be a our default directory
+COPY . .  -- the first '.' is the location where we are copying from, the second '.' is the directory where we are paste on the image
 
+ADD -- add command has additional features
 // With ADD we can add a file through a url
-ADD http://...  -- using a url
+ADD http://www.example.com  -- with add we can get a file from a URL 
 ADD file.zip    -- will also decompress a compressed file 
+
+// filename with indentation
+["", "", ""] -- COPY syntax if the file's got indentation
+COPY ["hello world.txt",".","."] -- the first index is the name ofthe file, second is the copyfrom and last is where to paste

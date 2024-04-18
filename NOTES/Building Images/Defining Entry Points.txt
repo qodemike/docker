@@ -1,0 +1,17 @@
+
+
+CMD use this specify the commands that should be run
+
+// If you have multiple CMD instructions on the docker files on the last one will take effect
+
+// Difference between RUN and CMD is that; RUN is executed during building the image while CMD is executed while starting a container
+
+Shell form
+CMD npm start -- writing like this will open another shell process
+
+Exec form
+CMD ["npm", "start"]
+
+use ENTRYPOINT if you want to prevent overwriting commands during running the container, it works the same as CMD
+
+but if you wanna overwrite the entrypoint command use 'docker run react-app --entrypoint npm start'

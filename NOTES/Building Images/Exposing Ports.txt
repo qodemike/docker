@@ -2,4 +2,4 @@
 // When you run a server on a container, the port will only be exposed on the container.
 // We can have muliple containers with the same port
 
-// The EXPOSE command doesn't set a port on the container is just a documentation that the app will run on port 3000 of the container
+EXPOSE 3000 the app will run on port 3000 of the container

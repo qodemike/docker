@@ -1,3 +1,5 @@
 
 // We can set environment on a container using ENV command on the dokcer file
 // The ENV variable will be persistent on container startup
+
+ENV API_URL=http://www.example.com

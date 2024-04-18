@@ -5,7 +5,10 @@
 // this way, that user can't edit files cause he won't have privilleges untill root says so
 
 // creating user in the container by adding RUN to dockerfile
-RUN addgroup app && adduser -S -G app app   --create a group called app and and a user called app into that group
+RUN addgroup app && adduser -S -G app app   -- create a group called app and add a user called app into that group
+adduser
+-S -- setting a system user
+-G -- setting a primary group
 
 // setting the user when the container opens
 USER app
