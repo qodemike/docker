@@ -1,0 +1,8 @@
+
+// An image is a collection of layers
+
+docker history vite-4 // cmd to see what layers were executed
+
+// Instructions that change don't frequenty should be on the top,
+        while those that do should be on the bottom
+        
