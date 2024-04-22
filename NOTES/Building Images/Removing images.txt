@@ -1,0 +1,10 @@
+
+// Dangling images are images that have no name and no tags
+
+docker image prune -- to remove dangling images
+
+docker container prune -- to remove all stopped containers
+
+docker image rm {imageid} -- use image id to remove an image
+
+docker image rm {imageid} {imageid} {imageid} -- removing multiple images
