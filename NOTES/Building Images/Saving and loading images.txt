@@ -1,0 +1,9 @@
+
+// Say you wanna save an image and transfer to another local machine
+
+
+// SAVING AN IMAGE
+docker image save -o vite-app.tar vite-app:1.0.0 // -o stands for output, vite-app.tar the output file format
+
+// LOADING AN IMAGE
+docker image load -i vite-app.tar // -i for input 
