@@ -1,0 +1,21 @@
+
+Pulled images are by default tagged with latest keyword
+
+Don't push an image with latest as a tag to your production or staging environment
+
+WAYS TO TAG AN IMAGE
+
+1. Tagging during build
+
+docker build -t react-app
+
+docker build -t react-app:3.1.5   -- teams that don't release oftenly use semantic versioning
+
+docker build -t react-app:77      -- teams that release frequenty prefer build numbers, this can be done automatically with CI CD tools
+
+REMOVING TAG
+docker image remove react-app:1   -- type in the tag name
+
+2. Tagging images after build
+
+docker image tag vite-4:latest vite-app:1.0.0  -- to change the name and the tag of an image
