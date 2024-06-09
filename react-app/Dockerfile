@@ -7,6 +7,8 @@ COPY . .
 
 RUN npm install
 
-EXPOSE 4173
+RUN npm run build
 
-CMD [ "npm", "run", "start" ]
+EXPOSE 8080
+
+CMD [ "npm", "run", "preview" ]

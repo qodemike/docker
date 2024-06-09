@@ -1,0 +1,6 @@
+# Each container has it's own file system not available to other containers
+
+# We should never store our data in a container's files system.
+# If you delete a container, it's file system will also go with it and we'll lose our data.
+
+// The take away is that you should never store  data in a container, that is what volumes are for.
