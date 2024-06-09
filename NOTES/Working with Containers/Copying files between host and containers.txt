@@ -1,0 +1,13 @@
+
+// Say you wanna copy a file from a container to host
+
+# command for copying
+docker cp 
+
+docker cp node-app:/app/error.log ../Docker  -- specify where we're copying from and where copying to on the host
+
+#AND VICE VERSA, host to container
+
+docker cp "file location on host" "location on container"
+
+docker cp ./secret.txt node-app:/app

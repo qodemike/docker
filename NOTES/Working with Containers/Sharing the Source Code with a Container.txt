@@ -1,0 +1,16 @@
+
+# Publishing application changes
+
+For production:
+    We should always build a new image tag it proper and then deploy it
+
+# We can create a mapping between a directory on the host and a directory on the container
+    This way any changes made on the project on the host are, immediately visible inside the container
+
+# What we ran initially
+docker run -d -p 3000:3000 -v app-data:/app/data node-docker:1.0.0
+
+# The print working directory (pwd) will return a full path of the working dir on the host
+docker run -d -p 3000:3000 -v $(pwd)/app node-docker:1.0.0
+
+
