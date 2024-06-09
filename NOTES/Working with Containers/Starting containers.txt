@@ -1,0 +1,17 @@
+
+
+docker ps // to see running containers
+
+docker run vite-app // the general command to run a container with the vite-app image
+
+docker start vite-app // used to start any stopped containers, not to be confused with run
+
+docker run vite-app npm start // since we defined "CMD npm start" on the dockerfile during building the image, we can use the CMD to do something special when starting the container 
+
+docker run vite-app npm run preview // since it a vite application, this will run vite preview
+
+docker run -d vite-app // -d for detached , to run a container in the background
+
+docker  associates each container with a random name
+
+docker run -d --name blue-sky vite-4 // if we want to run a container with our own unique name

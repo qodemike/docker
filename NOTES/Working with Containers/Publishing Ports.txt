@@ -1,0 +1,5 @@
+# Publishing a port so that the container application can be accessed on host
+
+docker run -d -p 3000:3000 // the first "3000" is the port of the host
+
+docker run -d -p 3000:3000 --name vite // "--name vite+react" giving the container a name

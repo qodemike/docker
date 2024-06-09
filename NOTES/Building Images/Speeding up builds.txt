@@ -1,8 +1,13 @@
 
+// You need to understand the concept of layers
 // An image is a collection of layers
+
+// Think of a layer as a small file system that only includes modified files
+
+Each layer represents a set of file system changes and every dockerfile instruction adds a new layer to the image.
 
 docker history vite-4 // cmd to see what layers were executed
 
-// Instructions that change don't frequenty should be on the top,
+// Instructions that change don't frequenty should be on the top of the dockerfile,
         while those that do should be on the bottom
         

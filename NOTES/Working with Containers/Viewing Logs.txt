@@ -1,0 +1,4 @@
+
+
+docker logs 655285 -- use "docker logs" plus the id of the container to log event going on with the container
+docker logs -n 5 655285  -- "-n" flag for number of lines to be printed, in this case 5 lines

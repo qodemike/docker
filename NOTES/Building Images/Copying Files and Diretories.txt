@@ -5,9 +5,9 @@
 
 COPY /app/ -- all the project files will be copied to this directory, if it doesn't exist it will be created
 
-// using WORKDIR the following commands , will be executed in this directory
-WORKDIR /app  -- and also when we start the container this will be a our default directory
-COPY . .  -- the first '.' is the location where we are copying from, the second '.' is the directory where we are paste on the image
+// using WORKDIR the following commands , will be executed in this directory, this establishes a default directory in the image after build
+WORKDIR /app  -- and also when we start the container this will be a our default directory ( we'll be here by default on container startup)
+COPY . .  -- the first '.' is the location where we are copying from, the second '.' is the directory where we are pasting on the image
 
 ADD -- add command has additional features
 // With ADD we can add a file through a url
@@ -15,5 +15,5 @@ ADD http://www.example.com  -- with add we can get a file from a URL
 ADD file.zip    -- will also decompress a compressed file 
 
 // filename with indentation
-["", "", ""] -- COPY syntax if the file's got indentation
-COPY ["hello world.txt",".","."] -- the first index is the name ofthe file, second is the copyfrom and last is where to paste
+["", "", ""] -- COPY syntax if the file name has spaces
+COPY ["hello world.txt",".","."] -- the first index is the name of the file, second is where to copy from and the last is where to paste in WORKDIR

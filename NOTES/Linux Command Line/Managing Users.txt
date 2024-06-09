@@ -15,4 +15,4 @@ root@2cdada18eade:/# cat /etc/shadow
         john:!:19818:0:99999:7::: --password stored in encrypted format
 
 // If you wanna launch a docker container and login as another user
-docker exec -it -u john adoring_wiles bash -- specifying who you wanna login as
+    docker exec -it -u john adoring_wiles bash -- specifying who you wanna login as

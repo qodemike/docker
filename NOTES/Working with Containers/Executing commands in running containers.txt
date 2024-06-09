@@ -1,0 +1,8 @@
+
+docker exec // we use docker exec to execute commands inside running containers
+
+docker run // running commands with docker run a new container is started and then the command is run
+
+docker exec ls // list files in the directory
+
+docker exec -it vite2 sh // starting a shell session in interactive mode

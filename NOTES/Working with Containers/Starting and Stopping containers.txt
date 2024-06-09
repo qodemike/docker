@@ -1,0 +1,6 @@
+
+docker stop // to stop a running container
+
+docker start c1 // to start a container that was running
+
+docker stop c1 // to stop container

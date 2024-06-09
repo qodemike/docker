@@ -1,6 +1,6 @@
+// NB: When you try to run a container without a command to execute, it will start then stop.
 
-
-CMD use this specify the commands that should be run
+CMD use this to specify the commands that should be executed on the container
 
 // If you have multiple CMD instructions on the docker files on the last one will take effect
 

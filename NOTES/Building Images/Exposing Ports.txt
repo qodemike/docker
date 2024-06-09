@@ -2,4 +2,6 @@
 // When you run a server on a container, the port will only be exposed on the container.
 // We can have muliple containers with the same port
 
-EXPOSE 3000 the app will run on port 3000 of the container
+// This is just a documentation tell docker engine which ports this container will be using
+
+EXPOSE 3000 -- the app will run on port 3000 of the container

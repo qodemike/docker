@@ -9,9 +9,9 @@ WAYS TO TAG AN IMAGE
 
 docker build -t react-app
 
-docker build -t react-app:3.1.5   -- teams that don't release oftenly use semantic versioning
+docker build -t react-app:3.1.5   -- for teams that don't release oftenly use semantic versioning
 
-docker build -t react-app:77      -- teams that release frequenty prefer build numbers, this can be done automatically with CI CD tools
+docker build -t react-app:77      -- for teams that release frequenty prefer build numbers, this can be done automatically with CI CD tools
 
 REMOVING TAG
 docker image remove react-app:1   -- type in the tag name

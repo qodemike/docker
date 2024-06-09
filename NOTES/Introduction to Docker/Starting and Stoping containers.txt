@@ -1,6 +1,6 @@
 
 // TO start a container
-docker start -i adoring_wiles  -- to start a container named adoring_wiles in interactive mode
+docker start -i adoring_wiles  -- to start a container named adoring_wiles in interactive mode that was intially stopped
 docker start -i 2cdada18eade86 -- you can also use and id to start a container 
 
 // To STOP a container from running

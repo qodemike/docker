@@ -1,0 +1,8 @@
+
+docker container rm c1
+
+docker rm c1
+
+docker ps -a | grep c1  // to find by name
+
+docker container prune   // Get rid of all stopped containers
